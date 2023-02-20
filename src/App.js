@@ -14,11 +14,11 @@ function App() {
         <button className='vertical' onClick={() => setxAxis(xAxis - 50)} disabled={xAxis === 0}> Left</button>
         <div className='main'>
           <div className='box' style={{ left: xAxis, top: yAxis }}></div>
+          </div>
           <button className='vertical' onClick={() => setxAxis(xAxis + 50)} disabled={xAxis === 450}>Right</button>
         </div>
         <button className='horizontal' onClick={() => setyAxis(yAxis + 50)} disabled={yAxis === 450}>Bottom</button>
       </div>
-    </div>
   );
 }
 
